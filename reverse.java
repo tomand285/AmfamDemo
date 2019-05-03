@@ -1,15 +1,16 @@
 public class reverse {
 
 	public static void main(String[] args) {
-		String word = "The world's best demo!";
-		String newWord = reverseWord(word);
-		System.out.println(newWord);
+		String w = "What is this?";
+		reverse r = new reverse();
+		String nw = r.reverseWord(w);		
+		System.out.println(nw);
 	}
 	
-	private static String reverseWord(String word) {
+	private String reverseWord(String word) {
 		String result = "";
 		String[] wordArray = word.split("");
-		for(int i=wordArray.length-1;i>=0;i--) {
+		for(int i=wordArray.length-1;i>-1;i--) {
 			result += wordArray[i];
 		}
 		return result;
